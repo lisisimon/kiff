@@ -1,0 +1,432 @@
+﻿@charset "utf-8";
+/* CSS Document */
+@import url("common_style.css");
+svg {
+	height: 688px;
+	width: 1255px;
+	padding-bottom: 10px;
+}
+/* цветные части svg */
+/*из иллюстратора*/
+.cls-1 {
+	fill: #68934c;
+	stroke: #429627;
+}
+.cls-1, .cls-10, .cls-13, .cls-15, .cls-16, .cls-4, .cls-5, .cls-7, .cls-8 {
+	stroke-miterlimit: 10;
+}
+.cls-1, .cls-10, .cls-13, .cls-15, .cls-16, .cls-7, .cls-8 {
+	stroke-width: 0.75px;
+}
+.cls-14, .cls-17, .cls-2, .cls-9 {
+	font-size: 25px;
+}
+.cls-2 {
+	fill: #cfe0c7;
+}
+.cls-11, .cls-14, .cls-17, .cls-2, .cls-6, .cls-9 {
+	font-family: ProximaNova-Light, Proxima Nova;
+	font-weight: 300;
+}
+.cls-3 {
+	letter-spacing: -0.01em;
+}
+.cls-4, .cls-5 {
+	fill: #f4a753;
+}
+.cls-4 {
+	stroke: #d89048;
+}
+.cls-5 {
+	stroke: #c4813f;
+}
+.cls-11, .cls-6 {
+	font-size: 23px;
+}
+.cls-6 {
+	fill: #f4ebe4;
+}
+.cls-7, .cls-8 {
+	fill: #e8704b;
+}
+.cls-7 {
+	stroke: #bf5119;
+}
+.cls-8 {
+	stroke: #d95204;
+}
+.cls-9 {
+	fill: #f9e4de;
+}
+.cls-10 {
+	fill: #4b64ad;
+	stroke: #0c164c;
+}
+.cls-11 {
+	fill: #c3cced;
+}
+.cls-12 {
+	letter-spacing: -0.01em;
+}
+.cls-13 {
+	fill: #3e939e;
+	stroke: #025373;
+}
+.cls-14 {
+	fill: #bdd5db;
+}
+.cls-15 {
+	fill: #9768ad;
+}
+.cls-15, .cls-16 {
+	stroke: #78108e;
+}
+.cls-16 {
+	fill: #fff;
+}
+.cls-17 {
+	fill: #d5b6dd;
+}
+svg g:hover {
+	transform: translate(-1px, -1px);
+	filter: url(#dropShadow);
+	transition: transform 0.1s;
+	cursor: pointer;
+}
+/*настройка с помощью js увеличения эл-та покадрово и активация кнопок*/
+footer {
+	display: flex;
+	justify-content: center;
+	visibility: hidden; /*временно*/
+}
+a, button {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 22px;
+}
+button {
+	height: 65px;
+	width: 250px;
+	outline: none;
+	user-select: none;
+	text-decoration: none;
+	border-radius: 2px;
+	margin-right: 43px;
+	padding: 0px;
+}
+
+a:hover, .button1:hover {
+	background: #443E3E;
+	color: white;
+	cursor: pointer;
+}
+.button1 {
+	background-color: white;
+	border-color: black;
+	border-width: 1px;
+}
+.generate_hidden{
+	display: flex;
+}
+.form {
+	height: 770px;
+	width: 600px;
+	margin-right: 100px;
+}
+.real-radio-btn {
+	width: 0;
+	height: 0;
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+label {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 24px;
+	height: 40px;
+	background-clip: content-box;
+	padding-bottom: 17px;
+	cursor: pointer;
+}
+#wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-top: 21px;
+	padding: 0;
+	justify-content: space-between;
+	max-height: 180px;
+}
+.custom-radio-btn {
+	position: relative;
+	display: inline-flex;
+	width: 30px;
+	height: 30px;
+	background: #ffffff;
+	border: 2px solid #000000;
+	border-radius: 50%;
+	margin: 0 14px 0 0;
+	vertical-align: middle;
+}
+.custom-radio-btn::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: black;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: 0.1s ease-in transform;
+}
+.visually-hidden:checked + .custom-radio-btn::before {
+	transform: translate(-50%, -50%) scale(1);
+}
+p, span, legend {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 40px;
+	padding: 0px;
+}
+fieldset {
+	border: none;
+	margin-bottom: 0 0 30px 0;
+	padding: 0;
+}
+/*дополнительные деления будут прописаны через js*/
+.year {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.year input {
+	outline: none;
+	-webkit-appearance: none;
+	background-color: black;
+	height: 1px;
+	width: 367px;
+	margin: 21px 0 0 0;
+}
+.year input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 15px;
+	height: 15px;
+	background-color: black;
+	border-radius: 50%;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+.year input::-moz-range-thumb {
+	-webkit-appearance: none;
+	width: 15px;
+	height: 15px;
+	background-color: black;
+	border-radius: 50%;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+.year input::-ms-thumb {
+	-webkit-appearance: none;
+	width: 15px;
+	height: 15px;
+	background-color: black;
+	border-radius: 50%;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+.year ul {
+	position: relative;
+	width: 367px;
+	padding: 0px;
+	display: flex;
+	justify-content: space-between;
+	height: auto;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+}
+.year li {
+	white-space: nowrap;
+	padding: 0 0 0 8px;
+	line-height: 30px;
+	list-style: none;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 24px;
+	margin-top: 32px;
+}
+.year_slider1 {
+	position: relative;
+}
+.year_slider2 {
+	position: absolute;
+	margin-top: 0px;
+}
+.rating {
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+}
+ul {
+	padding: 0;
+	list-style: none;
+	margin: 0px;
+}
+ul.rating {
+	margin: 21px 0 0 0;
+}
+li.score label {
+	padding-right: 18px;
+	padding-left: 18px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	cursor: pointer;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 22px;
+	color: white;
+	margin: 0 17px 0 0;
+}
+.rb1 {
+	background: #2612A2;
+}
+.rb2 {
+	background: #F79F1C;
+}
+.rb3 {
+	background: #E32121;
+}
+.score input[type=radio]:checked + label {
+	background: black;
+	color: white;
+}
+.score label:hover {
+	background: #443E3E;
+}
+.preview {
+	margin-left: 30px;
+}
+.continent {
+	display: flex;
+	margin: 30px 0 5px 0;
+}
+.continent p {
+	margin: 0px;
+}
+span {
+	margin: 0 0 0 18px;
+}
+a {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 26px;
+	text-decoration: none;
+	color: #2D16B8;
+	line-height: 40px;
+}
+a:hover {
+	color: #7966EE;
+}
+.generated_img{
+	height: 700px;
+	width: 496px;
+}
+.footer2 {
+	display: flex;
+	height: auto;
+	padding: 0px;
+	margin-top: 56px;
+	margin-left: 2px;
+}
+button {
+	height: 65px;
+	width: 225px;
+	user-select: none;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 22px;
+	text-decoration: none;
+	padding: 0px;
+	cursor: pointer;
+	appearance: none;
+	outline: none;
+	border-radius: 2px;
+}
+button:focus-visible {
+	outline: 1px black;
+}
+.button4 {
+	background-color: #000000;
+	border: none;
+	color: white;
+	margin-right: 33px;
+}
+button:hover {
+	background: #443E3E;
+}
+.export {
+	border: 1px solid black;
+	display: inline-block;
+	padding: 10px 80px;
+	text-decoration: none;
+	color: black;
+	font-size: 22px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.export:hover {
+	background: #443E3E;
+	color: white;
+}
+.result {
+	margin: 0 auto;
+	margin-top: 65px;
+	height: 623px;
+	width: 443px;
+}
+.controllers {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0 40px 0;
+}
+.controllers a {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 22px;
+	border: 1px solid black;
+	text-decoration: none;
+	margin-right: 30px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.contr_res1 {
+	padding: 18px 25px 17px 26px;
+	background-color: #000000;
+	border: none;
+	color: white;
+	margin: 0 43px auto 30px;
+}
+.contr_res2 {
+	padding: 18px 36px 17px 36px;
+	background-color: white;
+	border-color: black;
+	border-width: 1px;
+	color: black;
+}
+.controllers a:hover {
+	background: #443E3E;
+	color: white;
+}
+
+.btn {
+  stroke: #fff;
+  fill: #fff;
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+
+.cls-111{
+  fill:none;
+  stroke:#938a85;
+  stroke-miterlimit:10;
+}

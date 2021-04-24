@@ -1,0 +1,58 @@
+[
+{
+"country": "France",
+"type": "Music",
+"year": 2018,
+"rating": 6.6,
+"title": "Name One, France, 2018",
+"length": 75
+},
+{
+"country": "Belgium",
+"type": "Music",
+"year": 2018,
+"rating": 5.6,
+"title": "Name Two, Belgium, 2018",
+"length": 88
+},
+{
+"country": "Romania",
+"type": "Music",
+"year": 2019,
+"rating": 5.5,
+"title": "Name Three, Romania , 2019",
+"length": 120
+},
+{
+"country": "Ireland",
+"type": "Music",
+"year": 2019,
+"rating": 8.5,
+"title": "Name Three, Ireland , 2019",
+"length": 53
+},
+{
+"country": "Italy",
+"type": "Student",
+"year": 2020,
+"rating": 1.2,
+"title": "Name Six, Italy , 2020",
+"length": 30
+},
+{
+"country": "Germany",
+"type": "Scenario",
+"year": 2020,
+"rating": 1.8,
+"title": "Name Three, Germany, 2020",
+"length": 0
+},
+{
+"country": "Russia",
+"type": "Scenario",
+"year": 2019,
+"rating": 2.7,
+"title": "Name Five, Russia, 2019",
+"length": 0
+}
+]

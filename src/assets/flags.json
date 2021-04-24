@@ -1,0 +1,44 @@
+{
+"France" : {
+  "continent":"Europe",
+  "color1":"CornflowerBlue",
+  "color2":"White",
+  "color3":"Crimson"
+  },
+"Belgium" : {
+  "continent":"Europe",
+  "color1":"Black",
+  "color2":"Yellow",
+  "color3":"Red"
+  },
+"Romania" : {
+  "continent":"Europe",
+  "color1":"Navy",
+  "color2":"Gold",
+  "color3":"OrangeRed"
+  },
+"Ireland" : {
+  "continent":"Europe",
+  "color1":"OliveDrab",
+  "color2":"OldLace",
+  "color3":"Orange"
+  },
+"Italy" : {
+  "continent":"Europe",
+  "color1":"SeaGreen",
+  "color2":"Snow",
+  "color3":"Tomato"
+  },
+"Germany" : {
+  "continent":"Europe",
+  "color1":"DarkSlayGray",
+  "color2":"FireBrick",
+  "color3":"GoldenRod"
+  },
+"Russia" : {
+  "continent":"Europe",
+  "color1":"FloralWhite",
+  "color2":"MediumBlue",
+  "color3":"DarkRed"
+  }
+}

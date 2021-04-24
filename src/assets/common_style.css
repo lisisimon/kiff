@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'Oks Free';
+	src: url('OksFree.woff2') format('woff2'), url('OksFree.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+}
+@font-face {
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+}
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+header {
+	height: 97px;
+	width: 1183px;
+	padding-top: 20px;
+	display: flex;
+}
+body {
+	width: 1183px;
+	overflow-x: hidden;
+	margin: 0px auto;
+}
+header > p {
+	font-family: 'Oks Free', sans-serif;
+	font-size: 60px;
+	letter-spacing: 0.083em;
+	margin-left: 0px;
+	padding-top: 20px;
+	white-space: nowrap;
+}
+header > img {
+	margin-left: 478px;
+}
+main {
+	margin-top: 30px;
+	height: auto;
+	margin-bottom: 21px;
+}
+p {
+	margin-bottom: 21px;
+	margin-top: 0px;
+}
